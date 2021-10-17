@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         food_btn.setOnClickListener {
             intent = Intent(applicationContext, food::class.java)
             startActivity(intent)
-        }
+        } // food 클래스로 넘어가도록 설정해줌
         accom_btn.setOnClickListener {
             intent = Intent(applicationContext, food::class.java)
             startActivity(intent)
