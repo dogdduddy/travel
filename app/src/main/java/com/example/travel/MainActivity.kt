@@ -8,6 +8,8 @@ import android.widget.ImageView
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.recyclerview.widget.RecyclerView
+import com.example.travel.Tourist.DataSet
 import com.example.travel.Tourist.Tourist
 import com.example.travel.food.food
 

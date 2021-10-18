@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:onClick="">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/item_image"
+        android:importantForAccessibility="no"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_place"
+        android:text=""
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/item_image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_star"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/item_place"
+        app:layout_constraintLeft_toRightOf="@+id/item_image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_sub"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/item_star"
+        app:layout_constraintLeft_toRightOf="@+id/item_image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_location"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/item_sub"
+        app:layout_constraintLeft_toRightOf="@id/item_image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_writer"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/item_location"
+        app:layout_constraintLeft_toRightOf="@+id/item_image"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">travel</string>
     <string name="placeResource1">성산 일출봉</string>
-    <Int name="starResource1">5</Int>
+    <string name="starResource1">5</string>
     <string name="subResource1">미세먼지가 조금도 없어 유난히 파랗게 빛나던 제주도의 하늘 그리고 반짝이는 햇살아래 넓게 펼쳐진 바다 이렇게 예술작품 같은 제주도의 풍경을 한 눈에 감상할 수 있는 곳은 바로 성산일출봉이죠.</string>
     <string name="locationResource1">제주특별자치도 서귀포시 성산읍 성산리 1번지 등</string>
     <string name="writerResource1">전병선</string>

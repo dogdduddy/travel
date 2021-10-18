@@ -4,14 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tourist.Tourist">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_Tourist"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        />
+    tools:context=".Tourist.Tourist_Contents">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

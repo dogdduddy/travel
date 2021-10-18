@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".food.food"></activity>
-        <activity android:name=".Tourist.Tourist" ></activity>
+        <activity android:name=".Tourist.Tourist_Contents"></activity>
+        <activity android:name=".food.food" />
+        <activity android:name=".Tourist.Tourist" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,4 +20,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
