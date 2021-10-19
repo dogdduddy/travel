@@ -23,7 +23,6 @@ class Tourist : AppCompatActivity() {
                 startActivity(intent)
             }
         })
-
         // 클릭 이벤트 정의 후 바인딩 되도록 설정
         recyclerView.adapter = touristAdapter
     }

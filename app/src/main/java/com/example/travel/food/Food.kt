@@ -30,7 +30,6 @@ class Food : AppCompatActivity() {
         //supportActionBar?.hide()
         //setSupportActionBar(toolbar)
 
-
         recyclerView = findViewById(R.id.recycler_view_food)
         adapter = FoodAdapter(this, foodList)
         recyclerView?.layoutManager = GridLayoutManager(this, 2)
@@ -52,13 +51,13 @@ class Food : AppCompatActivity() {
             R.drawable.album9,
             R.drawable.album10,
             R.drawable.album11)
-        var a = food_dataset(covers[0],"Love poem", "4","신난다 요로로로로로롤 ㅎㅎㅎ","의정부 호원동","전병선")
+        var a = food_dataset(covers[0],"미영이네 식당", "4","신난다 요로로로로로롤 ㅎㅎㅎ","의정부 호원동","전병선")
         foodList!!.add(a)
-        a = food_dataset(covers[1],"Love poem", "4","신난다 요로로로로로롤 ㅎㅎㅎ","의정부 호원동","전병선")
+        a = food_dataset(covers[1],"상춘재", "5","신난다 요로로로로로롤 ㅎㅎㅎ","의정부 호원동","전병선")
         foodList!!.add(a)
-        a = food_dataset(covers[2],"Love poem", "4","신난다 요로로로로로롤 ㅎㅎㅎ","의정부 호원동","전병선")
+        a = food_dataset(covers[2],"밀리우", "4.5","신난다 요로로로로로롤 ㅎㅎㅎ","의정부 호원동","전병선")
         foodList!!.add(a)
-        a = food_dataset(covers[3],"Love poem", "4","신난다 요로로로로로롤 ㅎㅎㅎ","의정부 호원동","전병선")
+        a = food_dataset(covers[3],"스시호시카이", "4","신난다 요로로로로로롤 ㅎㅎㅎ","의정부 호원동","전병선")
         foodList!!.add(a)
         a = food_dataset(covers[4],"Love poem", "4","신난다 요로로로로로롤 ㅎㅎㅎ","의정부 호원동","전병선")
         foodList!!.add(a)
@@ -76,18 +75,5 @@ class Food : AppCompatActivity() {
         foodList!!.add(a)
 
         adapter!!.notifyDataSetChanged()
-    }
-    inner class PopupListener : PopupMenu.OnMenuItemClickListener {
-        override fun onMenuItemClick(item: MenuItem?): Boolean {
-            when(item?.itemId) {
-                R.id.food_detail -> {
-                    Toast.makeText(parent,"TEST1",Toast.LENGTH_SHORT).show()
-                    //intent = Intent(applicationContext, Tourist::class.java)
-                    //startActivity(intent)
-                }
-
-            }
-            return false
-        }
     }
 }

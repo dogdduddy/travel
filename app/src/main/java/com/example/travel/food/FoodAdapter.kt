@@ -32,11 +32,11 @@ class FoodAdapter(val context: Context, val foodList:MutableList<food_dataset>? 
     override fun onBindViewHolder(holder: FoodViewHolder, position: Int) {
         val food = foodList!![position]
         holder.foodImage.setImageResource(R.drawable.ic_launcher_background)
-        holder.foodTitle.text = food.foodResource.toString()
-        holder.foodSub.text = food.subResource.toString()
-        holder.foodStar.text = food.starResource.toString()
-        holder.foodLocation.text = food.locationResource.toString()
-        holder.foodWriter.text = food.writerResource.toString()
+        holder.foodTitle.text = food.foodResource
+        holder.foodSub.text = food.subResource
+        holder.foodStar.text = food.starResource
+        holder.foodLocation.text = food.locationResource
+        holder.foodWriter.text = food.writerResource
         holder.overflow.setOnClickListener { showPopupMenu(holder.overflow) }
     }
     override fun getItemCount() = foodList!!.size
@@ -50,21 +50,20 @@ class FoodAdapter(val context: Context, val foodList:MutableList<food_dataset>? 
         popup.show()
     }
 
-
     // Menu Item 클릭시 페이지 이동
     inner class PopupListener : PopupMenu.OnMenuItemClickListener {
         override fun onMenuItemClick(item: MenuItem?): Boolean {
             when(item?.itemId) {
                 R.id.food_detail -> {
                     val intent = Intent(context, food_Contents::class.java)
-                    intent.putExtra("title", foodList!!.get(0).foodResource.toString())
+                    //intent.putExtra("title", foodList!!.get(0).foodResource)
+                    //intent.putExtra("title", name.text)
                     context.startActivity(intent)
                 }
                 R.id.food_web -> {
                     val intent = Intent(context, food_Contents::class.java)
                     context.startActivity(intent)
                 }
-
             }
             return false
         }
