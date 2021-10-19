@@ -49,5 +49,4 @@ class TouristAdapter(private val context: Context, private val dataSet: List<aff
 
     // 람다표현식
     override fun getItemCount() = dataSet.size
-
 }

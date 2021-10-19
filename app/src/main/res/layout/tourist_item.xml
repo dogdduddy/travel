@@ -4,8 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:onClick="">
+    android:padding="16dp">
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -49,7 +48,4 @@
         android:text=""
         app:layout_constraintTop_toBottomOf="@+id/item_location"
         app:layout_constraintLeft_toRightOf="@+id/item_image"/>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

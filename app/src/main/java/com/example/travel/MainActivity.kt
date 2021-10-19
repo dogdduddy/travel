@@ -11,7 +11,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.RecyclerView
 import com.example.travel.Tourist.DataSet
 import com.example.travel.Tourist.Tourist
-import com.example.travel.food.food
+import com.example.travel.food.Food
 
 class MainActivity : AppCompatActivity() {
     //private lateinit var launcher: ActivityResultLauncher<Intent>
@@ -31,11 +31,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         food_btn.setOnClickListener {
-            intent = Intent(applicationContext, food::class.java)
+            intent = Intent(applicationContext, Food::class.java)
             startActivity(intent)
         } // food 클래스로 넘어가도록 설정해줌
         accom_btn.setOnClickListener {
-            intent = Intent(applicationContext, food::class.java)
+            intent = Intent(applicationContext, Food::class.java)
             startActivity(intent)
         }
     }
