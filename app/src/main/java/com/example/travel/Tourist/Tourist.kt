@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.recyclerview.widget.ListAdapter
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.travel.R
 
@@ -16,6 +16,9 @@ class Tourist : AppCompatActivity() {
         val dataset = DataSet().makeSet()
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view_Tourist)
         val touristAdapter = TouristAdapter(this, dataset)
+
+        val backspace:ImageView = findViewById(R.id.backSpace)
+        backspace.setOnClickListener { finish() }
 
         touristAdapter.setItemClickListener(object: TouristAdapter.OnItemClickListener{
             override fun onClick(v: View, position: Int) {

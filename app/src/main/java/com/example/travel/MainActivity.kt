@@ -16,7 +16,6 @@ import com.example.travel.Tourist.Tourist
 import com.example.travel.food.Food
 
 class MainActivity : AppCompatActivity() {
-    //private lateinit var launcher: ActivityResultLauncher<Intent>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
