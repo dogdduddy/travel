@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.travel.R
 
@@ -56,6 +57,7 @@ class FoodAdapter(val context: Context, val foodList:MutableList<food_dataset>? 
             when(item?.itemId) {
                 R.id.food_detail -> {
                     val intent = Intent(context, food_Contents::class.java)
+                    intent.putExtra("title", foodList!!.get(0).foodResource.toString())
                     context.startActivity(intent)
                 }
                 R.id.food_web -> {
