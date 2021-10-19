@@ -1,28 +1,38 @@
 package com.example.travel.food
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.PopupMenu
+import android.widget.Toast
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.travel.MainActivity
 import com.example.travel.R
+import com.example.travel.Tourist.Tourist
 
 class Food : AppCompatActivity() {
+
+
     private var recyclerView: RecyclerView? = null
-    private var adapter: foodAdapter? = null
+    private var adapter: FoodAdapter? = null
     private var foodList: MutableList<food_dataset>? = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food)
 
+        var intent: Intent
+
         //val toolbar = findViewById<Toolbar>(R.id.toolbar)
         //supportActionBar?.hide()
         //setSupportActionBar(toolbar)
 
+
         recyclerView = findViewById(R.id.recycler_view_food)
-        adapter = foodAdapter(this, foodList)
+        adapter = FoodAdapter(this, foodList)
         recyclerView?.layoutManager = GridLayoutManager(this, 2)
         recyclerView?.itemAnimator = DefaultItemAnimator()
         recyclerView?.adapter = adapter
@@ -66,5 +76,18 @@ class Food : AppCompatActivity() {
         foodList!!.add(a)
 
         adapter!!.notifyDataSetChanged()
+    }
+    inner class PopupListener : PopupMenu.OnMenuItemClickListener {
+        override fun onMenuItemClick(item: MenuItem?): Boolean {
+            when(item?.itemId) {
+                R.id.food_detail -> {
+                    Toast.makeText(parent,"TEST1",Toast.LENGTH_SHORT).show()
+                    //intent = Intent(applicationContext, Tourist::class.java)
+                    //startActivity(intent)
+                }
+
+            }
+            return false
+        }
     }
 }

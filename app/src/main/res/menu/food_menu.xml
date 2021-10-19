@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="go to Detail" />
-    <item android:title="Go to Web" />
+    <item android:title="go to Detail"
+        android:id="@+id/food_detail"/>
+    <item android:title="Go to Web"
+        android:id="@+id/food_web"/>
 </menu>
