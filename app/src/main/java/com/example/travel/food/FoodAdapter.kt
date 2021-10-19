@@ -37,27 +37,19 @@ class FoodAdapter(val context: Context, val foodList:MutableList<food_dataset>? 
         holder.foodStar.text = food.starResource
         holder.foodLocation.text = food.locationResource
         holder.foodWriter.text = food.writerResource
-        holder.overflow.setOnClickListener { showPopupMenu(holder.overflow) }
+        holder.overflow.setOnClickListener { showPopupMenu(holder.overflow, food) }
     }
     override fun getItemCount() = foodList!!.size
 
-    private fun showPopupMenu(view:View) {
+    private fun showPopupMenu(view:View, foodItem:food_dataset) {
         val popup = PopupMenu(context, view)
         val inflater = popup.menuInflater
         inflater.inflate(R.menu.food_menu, popup.menu)
-        var listener = PopupListener()
-        popup.setOnMenuItemClickListener(listener)
-        popup.show()
-    }
-
-    // Menu Item 클릭시 페이지 이동
-    inner class PopupListener : PopupMenu.OnMenuItemClickListener {
-        override fun onMenuItemClick(item: MenuItem?): Boolean {
+        popup.setOnMenuItemClickListener { item ->
             when(item?.itemId) {
                 R.id.food_detail -> {
                     val intent = Intent(context, food_Contents::class.java)
-                    //intent.putExtra("title", foodList!!.get(0).foodResource)
-                    //intent.putExtra("title", name.text)
+                    intent.putExtra("title", foodItem.foodResource)
                     context.startActivity(intent)
                 }
                 R.id.food_web -> {
@@ -65,7 +57,9 @@ class FoodAdapter(val context: Context, val foodList:MutableList<food_dataset>? 
                     context.startActivity(intent)
                 }
             }
-            return false
+            false
         }
+        popup.show()
     }
+
 }

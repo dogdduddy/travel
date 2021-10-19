@@ -5,7 +5,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp">
-
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
@@ -21,7 +20,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/item_place"
         android:text=""
-        app:layout_constraintTop_toTopOf="parent"
+        android:maxLength="20"
+        app:layout_constraintTop_toTopOf="@id/item_image"
+        android:layout_marginLeft="10dp"
         app:layout_constraintLeft_toRightOf="@+id/item_image"/>
 
     <TextView
@@ -29,14 +30,18 @@
         android:layout_height="wrap_content"
         android:id="@+id/item_star"
         android:text=""
-        app:layout_constraintTop_toBottomOf="@+id/item_place"
-        app:layout_constraintLeft_toRightOf="@+id/item_image"/>
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@+id/item_place"
+        app:layout_goneMarginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/item_place"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/item_sub"
         android:text=""
+        android:maxLength="50"
+        android:layout_marginLeft="10dp"
         app:layout_constraintTop_toBottomOf="@+id/item_star"
         app:layout_constraintLeft_toRightOf="@+id/item_image"/>
 
@@ -45,6 +50,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/item_location"
         android:text=""
+        android:layout_marginLeft="10dp"
         app:layout_constraintTop_toBottomOf="@id/item_sub"
         app:layout_constraintLeft_toRightOf="@id/item_image"/>
 
@@ -53,6 +59,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/item_writer"
         android:text=""
+        android:layout_marginLeft="10dp"
         app:layout_constraintTop_toBottomOf="@+id/item_location"
         app:layout_constraintLeft_toRightOf="@+id/item_image"/>
 
