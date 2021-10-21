@@ -34,7 +34,7 @@ class TouristAdapter(private val context: Context, private val dataSet: List<aff
         val item = dataSet[position]
         holder.itemImage.setImageResource(item.imageResource)
         holder.itemPlace.text = context.resources.getString(item.placeResource)
-        holder.itemStar.text = context.resources.getString(item.starResource)
+        holder.itemStar.text = "( " + context.resources.getString(item.starResource) + " )"
         holder.itemSub.text = context.resources.getString(item.subResource)
         holder.itemLocation.text = context.resources.getString(item.locationResource)
         holder.itemWriter.text = context.resources.getString(item.writerResource)

@@ -3,6 +3,37 @@
     <string name="placeResource1">성산 일출봉</string>
     <string name="starResource1">5</string>
     <string name="subResource1">미세먼지가 조금도 없어 유난히 파랗게 빛나던 제주도의 하늘 그리고 반짝이는 햇살아래 넓게 펼쳐진 바다 이렇게 예술작품 같은 제주도의 풍경을 한 눈에 감상할 수 있는 곳은 바로 성산일출봉이죠.</string>
-    <string name="locationResource1">제주특별자치도 서귀포시 성산읍 성산리 1번지 등</string>
+    <string name="locationResource1">제주특별자치도 서귀포시 성산읍 성산리 1번지</string>
     <string name="writerResource1">전병선</string>
+
+    <string name="placeResource2">카멜리아 힐</string>
+    <string name="starResource2">5</string>
+    <string name="subResource2">세계 80개국의 독백나무를 볼 수 있는 동양에서 제일 큰 동백꽃 화원인 카멜리아 힐. 카멜리아 힐에는 사계절 내내 꽃이 핀다는 사실 아셨나요? 카멜리아 힐의 시그니처인 동백꽃의 계절 겨울과 봄이 지나고
+    나면 5월부터 여름내내 수국축제가 펼쳐져요.</string>
+    <string name="locationResource2">제주특별자치도 서귀포시 안덕면 병악로 166</string>
+    <string name="writerResource2">휴식같은 친구</string>
+
+    <string name="placeResource3">협재 해수욕장</string>
+    <string name="starResource3">4</string>
+    <string name="subResource3">사빈해안의 아름다운 에메랄드빛 해변으로도 유명하고, 비양도가 손에 잡힐 듯한 풍경의 해변. 해안은 흰색의 순수 패사로 이루어진 사빈 해안으로 검은색의 현무암이 해안 곳곳에 노출되어 서로 대조를 이루고 있다. 모래사장 뒤쪽으로 소나무 숲이 들어서 있어 야영하기에도 좋은 환경이다.</string>
+    <string name="locationResource3">제주특별자치도 제주시 한림읍 협재리 2447-17</string>
+    <string name="writerResource3">맛있는 여행</string>
+
+    <string name="placeResource4">새별 오름</string>
+    <string name="starResource4">5</string>
+    <string name="subResource4">제주도 서쪽으로 향하는 길에 인접한 새별오름, 제주 오름을 얘기하면서 대표적으로 손꼽히는 제주도 여행의 필수 코드이다. 크고 작은 오름 전망에서부터 멀리 서쪽 협재 해수욕장 앞의 비양도 전망까지 보이는 사진 명소로도 알려져있다.</string>
+    <string name="locationResource4">대한민국 제주특별자치도 제주시 애월읍 봉성리</string>
+    <string name="writerResource4">제주 여행</string>
+
+    <string name="placeResource5">쇠소깍</string>
+    <string name="starResource5">5</string>
+    <string name="subResource5">2011년 6월 30일 국가지정문화재 명승으로 지정되면서 관광객들에게 큰 사랑을 받기 시작한 장소입니다. 제주 현무암 지하를 흐르는 물이 분출하면서 바닷물과 만나 깊은 웅덩이를 형성한 장소로, 주변 현무암으로 가득 차있는 희소한 지형입니다.</string>
+    <string name="locationResource5">제주특별자치도 서귀포시 효돈동 쇠소깍로 138</string>
+    <string name="writerResource5">마운틴</string>
+
+    <string name="placeResource6">아르떼 뮤지엄</string>
+    <string name="starResource6">4</string>
+    <string name="subResource6">스피커 제조 공장을 활용하여 만든 넓고, 높은 천고 안에서 빛과 소리로 빛어낸 다양한 미디어 아트를 즐길 수 있습니다. 화사한 봄 제주처럼 노란색의 유채꽃을 형상화한 반짝이는 금빛 물결을 구경할 수 있습니다.</string>
+    <string name="locationResource6">제주특별자치도 서귀포시 성산읍 성산리 1번지 등</string>
+    <string name="writerResource6">데카르트</string>
 </resources>

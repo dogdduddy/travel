@@ -31,7 +31,7 @@ class FoodAdapter(val context: Context, val foodList:MutableList<food_dataset>? 
 
     override fun onBindViewHolder(holder: FoodViewHolder, position: Int) {
         val food = foodList!![position]
-        holder.foodImage.setImageResource(R.drawable.ic_launcher_background)
+        holder.foodImage.setImageResource(foodList[position].imageResource)
         holder.foodTitle.text = food.foodResource
         holder.foodSub.text = food.subResource
         holder.foodStar.text = food.starResource
@@ -49,7 +49,12 @@ class FoodAdapter(val context: Context, val foodList:MutableList<food_dataset>? 
             when(item?.itemId) {
                 R.id.food_detail -> {
                     val intent = Intent(context, food_Contents::class.java)
+                    intent.putExtra("image", foodItem.imageResource)
                     intent.putExtra("title", foodItem.foodResource)
+                    intent.putExtra("star", foodItem.starResource)
+                    intent.putExtra("sub", foodItem.subResource)
+                    intent.putExtra("location", foodItem.locationResource)
+                    intent.putExtra("writer", foodItem.writerResource)
                     context.startActivity(intent)
                 }
                 R.id.food_web -> {
